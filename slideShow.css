@@ -1,0 +1,95 @@
+.slideshowContainer{ 
+    width: 97%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10.5px ;
+    margin-left: 29px;
+    cursor: pointer;
+   
+    
+    
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    transition: 1s;
+  
+}
+
+.slider:hover{
+    transform: scale(1.2);
+    
+   
+    cursor: pointer;
+
+}
+
+
+#slideImage1{
+    width: 100%;
+    height: 100vh;
+   
+   
+    
+}
+
+  
+
+
+
+.slidesText{
+    position: relative;
+    top: 40%;
+    left: 30%;
+}
+
+.p1{
+    text-align: center;
+    color:  #Ffc0cb;
+    font-size: 40px;
+    font-family: "Garamond";
+    left: 50px;
+    position: absolute;
+}
+
+.p2{
+    
+    text-align: center;
+    color:  #Ffc0cb;
+    font-size: 20px;
+    font-family: "Courier";
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    font-style: italic;
+   
+}
+
+.EmbarkButton{
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    background-color:  #Ffc0cb;
+    border-radius: 25px;
+    position: absolute;
+    top: 350px;
+    left:  180px;
+    font-family: "Courier";
+    border: 1px solid  #Ffc0cb; ;
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+
+.EmbarkButton:hover{
+    background-color: transparent;
+    border: 1px solid #Ffc0cb;
+    color:  #Ffc0cb;
+}
+
+
