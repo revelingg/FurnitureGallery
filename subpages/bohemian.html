@@ -1,0 +1,302 @@
+<!DOCTYPE html> 
+<html>
+
+
+<head>
+    <meta namae="viewport" content="with-device-width, intitial-scale=1.0">
+    <Title> Bohemian </Title>
+    <link rel="stylesheet" href="/styles/subpagescss/bohemian.css">
+   
+    <link rel="stylesheet" href="/styles/subpagescss/bohemianHeader.css">
+   
+    
+  
+</head>
+<body style="height: 3000;" onload="slider()">
+    
+    <section class="header">
+             
+        <div class="leftHead">
+               <!-- search bar goes here -->
+               <div class="search">
+                <input  class=searchBar type="text" placeholder="Search..">
+                <img class="searchButtonIcon" src="/icons/search.svg" >
+               </div>
+               
+
+        </div >
+
+        <div class="middleHead">
+            <!-- text ban goes here -->
+
+            <!-- brings back the page to home page anytime logo is clicked on-->
+            <a href="/furniture.html" style="text-decoration: none;">
+                <p class="brandText">
+                   Bohemian Archives
+            
+                </p>
+            </a>
+
+        </div>
+
+        <div class="rightHead">
+               <!-- cart and user login  goes here -->
+
+            <div class="nav-links">
+        
+                    <div>
+                        <a href="" class="user">
+                            <img class="userIcon" src="/icons/user.png">
+                            <p > Account</p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="fav">
+                            <img class="favIcon" src="/icons/favorites.png">
+                            <p > Favorites</p>
+                        </a>
+                    </div>
+
+                    
+
+
+                
+            </div>
+
+        </div>
+
+        <section class="underHeader" > 
+
+             <!--site options to see the different pages on the website under the header-->
+             <a  href="/subpages/trends.html" >
+                <p class="new" id="#trends">
+                    Trends Gallery
+                </p>
+            </a>
+           <!--<a href="/subpages/room.html">
+                <p class="roomDecorSect" id="#roomGallery">
+                     Room Gallery
+                </p>
+            </a> --> 
+
+            <a  href="/subpages/stone.html">
+                <p class="stoneGallerySect" id="#stoneGallery">
+                    Stone Gallery
+                </p>
+            </a>
+
+            <a href="/subpages/bohemian.html">
+                <p class="roomInspSect" id="#bohemianGallery">
+                    Bohemian Gallery
+                </p>
+            </a>
+
+            <a href="/subpages/future.html">
+                <p class="designCollabsSect" id="#futuristicGallery">
+                     Fututure Gallery
+                </p>
+            </a>
+
+            <a  href="/subpages/affiliated.html">
+                <p class="brandDealsSect"  id="#affiliatedGallery">
+                   Affiliated Gallery
+                </p>
+            </a>
+
+            
+
+        </section>
+
+    </section>
+
+    <div class="top">
+
+        <!-- these are the differt parts of thee images that 
+                make up the site.
+                The overlay ads an effect when highlighted over-->
+        <div class="firstTop">
+          
+           <img class=topImage src="/images/timage1.jpeg" id="topImage">
+           <div class="overlay"></div>
+           <img class="likeButton" src="/icons/heart.png" >
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+   
+     <script>
+
+        /* function that takes care of the java for the site. 
+            Essentially makes up the slide shows and the interval 
+            sets how long they should all dislay for */ 
+        var topImage = document.getElementById("topImage");
+        var images = new Array(
+
+         "/images/timage1.jpeg",
+         "/images/tImage3.jpg",
+         "/images/tImage4.jpg",
+         "/images/tImage2.jpg",
+        )
+
+        var topImage2 = document.getElementById("topImage2");
+        var images2 = new Array(
+
+         "/images/t2Image1.jpg",
+         "/images/t2Image5.jpg",
+         "/images/t2Image2.jpg",
+         "/images/t2Image3.jpg",
+         "/images/t2Image4.jpg"
+        )
+
+        var topImage3 = document.getElementById("topImage3");
+        var images3 = new Array(
+
+         "/images/t3Image1.jpg",
+         "/images/t3Image3.jpg",
+         "/images/t3Image2.jpg",
+         "/images/t3Image4.jpg",
+        
+        )
+
+        var topImage4 = document.getElementById("topImage4");
+        var images4 = new Array(
+
+         "/images/t4Image1.jpg",
+         "/images/t4Image2.jpg",
+         "/images/t4Image3.jpg",
+         "/images/t4Image4.jpg"
+         
+        )
+
+        var topImage5 = document.getElementById("topImage5");
+        var images5 = new Array(
+
+        "/images/t5Image4.jpg",
+         "/images/t5Image1.jpg",
+         "/images/t5Image2.jpg",
+         "/images/t5Image3.jpg",   
+        )
+
+        var topImage6 = document.getElementById("topImage6");
+        var images6 = new Array(
+
+       
+         "/images/t6Image1.jpg",
+         "/images/t6Image2.jpg",
+         "/images/t6Image3.jpg",
+         "/images/t6Image4.jpg",
+         "/images/t6Image5.jpg",
+         "/images/t6Image6.jpg"
+        )
+
+        var topImage7 = document.getElementById("topImage7");
+        var images7 = new Array(
+
+       
+         "/images/t7Image1.jpg",
+         "/images/t7Image2.jpg",
+         "/images/t7Image3.jpg",
+         "/images/t7Image4.jpg",
+        
+        )
+        
+        var topImage8 = document.getElementById("topImage8");
+        var images8 = new Array(
+
+       
+         "/images/t8Image1.jpg",
+         "/images/t8Image2.jpg",
+         "/images/t8Image3.jpg",
+         "/images/t8Image4.jpg",
+        
+        )
+
+        var len = images.length;
+        var len2 = images2.length;
+        var len3 = images3.length;
+        var len4 = images4.length;
+        var len5 = images5.length;
+        var len6 = images6.length;
+        var len7 = images7.length;
+        var len8 = images8.length;
+
+        var i = 0;
+        
+
+
+        function slider(){
+            if(i > len -1){ 
+                i = 0;
+            }
+            if(i > len2 -1){ 
+                i = 0;
+            }
+            if(i > len3 -1){ 
+                i = 0;
+            }
+
+            if(i > len4 -1){ 
+                i = 0;
+            }
+
+            if(i > len5 -1){ 
+                i = 0;
+            }
+
+            if(i > len6 -1){ 
+                i = 0;
+            }
+
+            if(i > len7 -1){ 
+                i = 0;
+            }
+            if(i > len8 -1){ 
+                i = 0;
+            }
+
+
+            topImage.src = images[i];
+            topImage2.src = images2[i];
+            topImage3.src = images3[i];
+            topImage4.src = images4[i];
+            topImage5.src = images5[i];
+            topImage6.src = images6[i];
+            topImage7.src = images7[i];
+            topImage8.src = images8[i];
+            i++;
+            
+            setTimeout('slider()', 6000);
+        }
+
+      
+
+            
+
+        
+
+
+
+
+
+    </script> 
+
+   
+   
+
+
+</body>
+
+
+
+
+</html>
